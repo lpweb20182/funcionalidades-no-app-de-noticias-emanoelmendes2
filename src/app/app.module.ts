@@ -18,11 +18,13 @@ import { AutenticacaoGuard } from './autenticacao.guard';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { AdminNoticiasComponent } from './admin-noticias/admin-noticias.component';
 import { AdminCadastrarNoticiaComponent } from './admin-cadastrar-noticia/admin-cadastrar-noticia.component';
+import { PaginaCategoriaComponent } from './pagina-categoria/pagina-categoria.component';
 
 const rotas: Routes = [
   { path: 'noticias/:id', component: LeitorDeNoticiaComponent, },
   { path: 'noticias', component: NoticiasComponent, },
   { path: 'sobre', component: SobreComponent, },
+  { path: 'categoria', component: PaginaCategoriaComponent, },
   { path: 'login', component: LoginComponent, },
   {
     path: 'admin', component: AdminHomeComponent, 
@@ -51,7 +53,8 @@ const rotas: Routes = [
     AdminHomeComponent,
     AdminDashboardComponent,
     AdminNoticiasComponent,
-    AdminCadastrarNoticiaComponent
+    AdminCadastrarNoticiaComponent,
+    PaginaCategoriaComponent
   ],
   imports: [
     NgbModule,
